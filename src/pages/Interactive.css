@@ -1,0 +1,80 @@
+.interactive-page {
+  min-height: 100vh;
+}
+
+.demos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.demo-card {
+  cursor: pointer;
+  text-align: center;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.demo-card:hover {
+  border: 2px solid #e63946;
+}
+
+.demo-card.completed {
+  border-left: 4px solid #06d6a0;
+}
+
+.demo-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.demo-title {
+  font-size: 1.5rem;
+  color: #1d3557;
+  margin-bottom: 1rem;
+}
+
+.demo-description {
+  color: #666;
+  line-height: 1.6;
+}
+
+.demo-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #06d6a0;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.interactive-demo-page {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.back-btn {
+  background: transparent;
+  color: #457b9d;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.back-btn:hover {
+  color: #e63946;
+}
+
+@media (max-width: 768px) {
+  .demos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

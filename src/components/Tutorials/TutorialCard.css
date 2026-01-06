@@ -1,0 +1,65 @@
+.tutorial-card {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.tutorial-card:hover {
+  border: 2px solid #e63946;
+}
+
+.tutorial-card.completed {
+  border-left: 4px solid #06d6a0;
+}
+
+.tutorial-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.tutorial-icon {
+  font-size: 2rem;
+  color: #457b9d;
+}
+
+.complete-badge {
+  font-size: 1.5rem;
+  color: #06d6a0;
+}
+
+.tutorial-card-title {
+  font-size: 1.5rem;
+  color: #1d3557;
+  margin-bottom: 0.5rem;
+}
+
+.tutorial-card-description {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.tutorial-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.tutorial-category {
+  background: #a8dadc;
+  color: #1d3557;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.tutorial-steps {
+  color: #666;
+  font-size: 0.9rem;
+}
+

@@ -1,0 +1,47 @@
+.tutorials-page {
+  min-height: 100vh;
+}
+
+.category-filter {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: 2px solid #457b9d;
+  background: white;
+  color: #457b9d;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background: #457b9d;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: #e63946;
+  border-color: #e63946;
+  color: white;
+}
+
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .tutorials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

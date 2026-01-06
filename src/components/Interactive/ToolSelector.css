@@ -1,0 +1,190 @@
+.tool-selector {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.demo-instructions {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.demo-instructions h2 {
+  color: #1d3557;
+  margin-bottom: 1rem;
+}
+
+.progress-info {
+  margin-top: 1rem;
+  color: #457b9d;
+  font-weight: 600;
+}
+
+.scenarios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.scenario-card {
+  cursor: pointer;
+  text-align: center;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.scenario-card:hover {
+  border-color: #457b9d;
+}
+
+.scenario-card.active {
+  border: 2px solid #e63946;
+  background: #fff5f5;
+}
+
+.scenario-card.completed {
+  border-left: 4px solid #06d6a0;
+}
+
+.scenario-icon {
+  font-size: 3rem;
+  color: #457b9d;
+  margin-bottom: 1rem;
+}
+
+.scenario-card h3 {
+  color: #1d3557;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.scenario-card p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.completed-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #06d6a0;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tool-selection {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.tool-selection h3 {
+  color: #1d3557;
+  margin-bottom: 0.5rem;
+}
+
+.scenario-description {
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tool-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.tool-option:hover {
+  border-color: #457b9d;
+  background: #f0f8ff;
+}
+
+.tool-option.selected {
+  border-color: #06d6a0;
+  background: #f0fff4;
+}
+
+.tool-option svg {
+  font-size: 1.5rem;
+  color: #457b9d;
+}
+
+.tool-option.selected svg {
+  color: #06d6a0;
+}
+
+.check-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: #06d6a0;
+  font-size: 1rem;
+}
+
+.selection-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.selection-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.completion-message {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #06d6a0, #48cae4);
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.completion-message h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .scenarios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .selection-actions {
+    flex-direction: column;
+  }
+
+  .selection-actions button {
+    width: 100%;
+  }
+}
+
